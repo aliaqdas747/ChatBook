@@ -1,3 +1,4 @@
+import 'package:chat_app/Pages/Registration_Page.dart';
 import 'package:chat_app/components/my_Button.dart';
 import 'package:chat_app/components/textField.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +58,11 @@ class LoginPage extends StatelessWidget {
             children: <Widget>[
               Text('Not a member?',style: TextStyle(color: Theme.of(context).colorScheme.primary),),
             const  SizedBox(width: 5,),
-             Text('Registor Now',style: TextStyle(color: Theme.of(context).colorScheme.primary),),
+             InkWell(
+                 onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: (context)=> Registor()));
+                 },
+                 child: Text('Registor Now',style: TextStyle(color: Theme.of(context).colorScheme.primary),)),
             ],
           ),
         ],
