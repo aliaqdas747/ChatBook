@@ -17,9 +17,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: lightMode,
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      //3rd
+      theme: lightMode,
+      home:  LoginPage(),
+
     );
   }
 }
